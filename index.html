@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>HTML Quiz</h1>
+        <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+        <div id="question-container" class="card">
+            <p id="question">Loading...</p>
+            <ul id="answers">
+                <li><button onclick="answerQuestion(0)">Answer 1</button></li>
+                <li><button onclick="answerQuestion(1)">Answer 2</button></li>
+                <li><button onclick="answerQuestion(2)">Answer 3</button></li>
+                <li><button onclick="answerQuestion(3)">Answer 4</button></li>
+            </ul>
+            <p id="timer">Time Remaining: <span id="time"></span>s</p>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+        <div id="score-container" style="display:none;">
+            <p>Your final score is: <span id="final-score"></span></p>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="second.js"></script>
+    <script src="third.js"></script>
+    <script src="fourth.js"></script>
+    <script src="fifth.js"></script>
+</body>
+</html>
